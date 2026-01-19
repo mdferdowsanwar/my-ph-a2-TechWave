@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #00FF88;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bg-gradient{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+}
+
+
+/* Navbar related css */
+#header{background-color: #1A0B2E;}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.brand{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.brand span{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.btn-group{
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navbar-bottom-line{border: 1px solid rgba(128, 128, 128, 0.3);}
+.hamburger-icon{display: none;}
+
+
+
+
+/* Mobile Media (max-576px) related css */
+@media screen and (max-width: 576px) {
+    .navbar{margin: 0px 15px;}
+    .nav-links{display: none;}
+    .btn-group{display: none;}
+    .hamburger-icon{display: inline;}
+}
+
+
+
