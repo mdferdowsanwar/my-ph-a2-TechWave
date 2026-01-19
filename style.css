@@ -78,7 +78,8 @@
 .banner-image{
     padding: 70px 100px;
     background-image: url("./assets/hero-circle.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
 }
 .banner-image img{width: 100%;}
@@ -100,7 +101,10 @@
     font-weight: 800;
     margin-top: 30px;
 }
-.banner-content p{margin: 20px auto;}
+.banner-content p{
+    margin: 20px auto;
+    opacity: 0.6;
+}
 .btn-group-container{
     display: flex;
     justify-content: center;
@@ -123,7 +127,10 @@
     font-size: 3rem;
     font-weight: 700;
 }
-.about-podcast-content p{margin: 20px auto;}
+.about-podcast-content p{
+    margin: 20px auto;
+    opacity: 0.6;
+}
 .about-podcast-summary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -143,6 +150,51 @@
     margin-top: 10px;
 }
 
+/* About podcast related css */
+.why-choose{
+    background-color: #230E3D;
+    color: var(--primary-color);
+    padding: 60px 0px;
+}
+.why-choose .container h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.why-choose-card-container{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 220px);
+}
+.why-choose-card{
+    background: rgba(53, 17, 101, 0.4);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 40px;
+}
+.why-choose-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 12px 0px;
+}
+.why-choose-card p{
+    opacity: 0.6;
+}
+.why-choose-card:first-child{grid-row: 1 / span 2;}
+.why-choose-card:nth-child(2),
+.why-choose-card:nth-child(3){grid-column: 2 / span 2;}
+.why-choose-card:nth-child(4){grid-column: 1 / span 2;}
+
+
+
+
+
+
 
 /* Mobile Media (max-576px) related css */
 @media screen and (max-width: 576px) {
@@ -150,9 +202,18 @@
     .nav-links{display: none;}
     .navbar .btn-group{display: none;}
     .hamburger-icon{display: inline;}
+    
 
     .about-podcast-content{padding: 15px;}
     .about-podcast-summary{grid-template-columns: repeat(2, 1fr);}
+
+    .why-choose-card-container{grid-template-columns: 1fr;}
+    .why-choose-card:first-child{grid-row: auto;}
+    .why-choose-card:nth-child(2),
+    .why-choose-card:nth-child(3),
+    .why-choose-card:nth-child(4){grid-column: auto;}
+    .why-choose-card{margin: 0px 15px;}
+
 }
 
 
