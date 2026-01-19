@@ -150,13 +150,14 @@
     margin-top: 10px;
 }
 
-/* About podcast related css */
+/* Why choose related css */
 .why-choose{
     background-color: #230E3D;
     color: var(--primary-color);
     padding: 60px 0px;
 }
-.why-choose .container h2{
+.why-choose .container h2,
+.feature-episodes .container h2{
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
@@ -170,7 +171,7 @@
 }
 .why-choose-card{
     background: rgba(53, 17, 101, 0.4);
-    padding: 25px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,12 +190,49 @@
 .why-choose-card:nth-child(2),
 .why-choose-card:nth-child(3){grid-column: 2 / span 2;}
 .why-choose-card:nth-child(4){grid-column: 1 / span 2;}
-
+/* Feature episodes related css */
+.feature-episodes{
+    background-color: #1A0B2E;
+    color: var(--primary-color);
+    padding-top: 80px;
+}
+.cards-container{
+    display: flex;
+    gap: 30px;
+}
+.single-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 25px;
+}
+.single-card iframe{
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    min-height: 205px;
+}
+.single-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+.single-card p{
+    margin: 15px auto;
+    opacity: 0.6;
+    padding: 0px 20px;
+}
+.time-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 0px 30px 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
 /* Meet the host related css */
 .meet-host{
     background: #1A0B2E;
     color: var(--primary-color);
-    padding: 60px 0px;
+    padding: 75px 0px;
 }
 .meet-host .container h2{
     font-size: 3rem;
@@ -235,13 +273,12 @@
 
 /* Footer related css */
 footer{
-    background-color: #201143;
     color: var(--primary-color);
     padding: 50px 0px;
-    background-image: url ("./assets/footer-bg.png");
+    background-image: url("./assets/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 }
 .footer-content{
     display: flex;
@@ -283,6 +320,8 @@ footer{
     .why-choose-card:nth-child(4){grid-column: auto;}
     .why-choose-card{margin: 0px 15px;}
 
+    .cards-container{flex-direction: column; margin: 0px 15px;}
+    
     .host-card-container{
         text-align: center; 
         flex-direction: column;
@@ -290,7 +329,6 @@ footer{
     }
     .host-social-link{ justify-content: center;}
     .social-link-container{grid-template-columns: repeat(2, 1fr); gap: 20px;}
-
 }
 
 
