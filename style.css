@@ -204,7 +204,7 @@
 }
 .host-card-container{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     gap: 20px;
     background: rgba(53, 17, 101, 0.4);
@@ -233,8 +233,37 @@
 }
 .host-social-link .box img{width: 100%;}
 
-
-
+/* Footer related css */
+footer{
+    background-color: #201143;
+    color: var(--primary-color);
+    padding: 50px 0px;
+    background-image: url ("./assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-link-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.social-link-container span{opacity: 0.6;}
+.social-link{
+    display: flex; 
+    gap: 8px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.footer-content p{opacity: 0.6;}
 
 
 /* Mobile Media (max-576px) related css */
@@ -244,7 +273,6 @@
     .navbar .btn-group{display: none;}
     .hamburger-icon{display: inline;}
     
-
     .about-podcast-content{padding: 15px;}
     .about-podcast-summary{grid-template-columns: repeat(2, 1fr);}
 
@@ -261,6 +289,7 @@
         margin: 0px 15px;
     }
     .host-social-link{ justify-content: center;}
+    .social-link-container{grid-template-columns: repeat(2, 1fr); gap: 20px;}
 
 }
 
