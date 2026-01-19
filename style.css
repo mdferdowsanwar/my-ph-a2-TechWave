@@ -94,17 +94,13 @@
     border-radius: 20px;
     background-color: var(--secondary-color);
 }
-.banner-content{
-    color: var(--primary-color);
-}
+.banner-content{color: var(--primary-color);}
 .banner-content h1{
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
 }
-.banner-content p{
-    margin: 20px auto;
-}
+.banner-content p{margin: 20px auto;}
 .btn-group-container{
     display: flex;
     justify-content: center;
@@ -116,6 +112,37 @@
     color: var(--secondary-color);
 }
 
+/* About podcast related css */
+.about-podcast{background-color: #1A0B2E;}
+.about-podcast-content{
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px 150px;
+}
+.about-podcast-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about-podcast-content p{margin: 20px auto;}
+.about-podcast-summary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.about-podcast-summary-card{
+    padding: 15px;
+    margin: 30px auto;
+}
+.about-podcast-summary-card h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.about-podcast-summary-card p{
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
 
 /* Mobile Media (max-576px) related css */
 @media screen and (max-width: 576px) {
@@ -123,6 +150,9 @@
     .nav-links{display: none;}
     .navbar .btn-group{display: none;}
     .hamburger-icon{display: inline;}
+
+    .about-podcast-content{padding: 15px;}
+    .about-podcast-summary{grid-template-columns: repeat(2, 1fr);}
 }
 
 
