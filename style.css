@@ -131,6 +131,7 @@
     margin: 20px auto;
     opacity: 0.6;
 }
+.about-podcast-content p:last-child{margin-bottom: 30px;}
 .about-podcast-summary{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -154,7 +155,7 @@
 .why-choose{
     background-color: #230E3D;
     color: var(--primary-color);
-    padding: 60px 0px;
+    padding: 75px 0px;
 }
 .why-choose .container h2,
 .feature-episodes .container h2{
