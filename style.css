@@ -168,11 +168,11 @@
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 220px);
+    grid-template-rows: repeat(3, 1fr);
 }
 .why-choose-card{
     background: rgba(53, 17, 101, 0.4);
-    padding: 35px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,7 +301,7 @@ footer{
     text-decoration: none;
     color: var(--primary-color);
 }
-.footer-content p{opacity: 0.6;}
+.footer-content p{opacity: 0.6; text-align: center;}
 
 
 /* Mobile Media (max-576px) related css */
@@ -310,19 +310,20 @@ footer{
     .nav-links{display: none;}
     .navbar .btn-group{display: none;}
     .hamburger-icon{display: inline;}
-    
+    .banner-image{padding: 40px;}
+    .banner-image img{width: 65%;}
+    .tooltip{right: -10px;}
+    .banner{background-position: 0% 30%; background-size: contain;}
     .about-podcast-content{padding: 15px;}
     .about-podcast-summary{grid-template-columns: repeat(2, 1fr);}
-
     .why-choose-card-container{grid-template-columns: 1fr;}
     .why-choose-card:first-child{grid-row: auto;}
     .why-choose-card:nth-child(2),
     .why-choose-card:nth-child(3),
     .why-choose-card:nth-child(4){grid-column: auto;}
     .why-choose-card{margin: 0px 15px;}
-
+    .single-card iframe{height: 100%; min-height: 100%;}
     .cards-container{flex-direction: column; margin: 0px 15px;}
-    
     .host-card-container{
         text-align: center; 
         flex-direction: column;
