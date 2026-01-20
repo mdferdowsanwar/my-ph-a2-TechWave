@@ -205,6 +205,7 @@
 .why-choose-card:nth-child(2),
 .why-choose-card:nth-child(3){grid-column: 2 / span 2;}
 .why-choose-card:nth-child(4){grid-column: 1 / span 2;}
+
 /* Feature episodes related css */
 .feature-episodes{
     background-color: #1A0B2E;
@@ -243,6 +244,7 @@
     color: var(--secondary-color);
     font-weight: 500;
 }
+
 /* Meet the host related css */
 .meet-host{
     background: #1A0B2E;
